@@ -86,13 +86,18 @@ p {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin-right: 50px;
+    margin-right: 130px;
+}
+
+.nav-link a:hover {
+    color: blue;
 }
 
 .nav-link a {
     text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
     color: black;
-    border-bottom: 1px solid black;
+    font-size: 20px;
 }
 
 /* MAIN 
@@ -114,10 +119,12 @@ p {
     grid-column: 2;
     justify-items: center;
     height: 350px;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .contenedor-texto {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
     text-shadow: 2px 2px 30px #ffd000;
     color: rgb(255, 255, 255);
     text-align: center;
@@ -152,3 +159,11 @@ p {
 .contenedor-link:hover {
     background-color: #ff5050;
 }
+
+.fotocv {
+    transition: transform .2s;
+  }
+  
+  .fotocv:hover {
+    transform: scale(1.2);
+  }
