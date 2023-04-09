@@ -1,13 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.home-body {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
 h1 {
-    color: red;
+    color: black;
     text-align: center;
 }
 
+#cont1 {
+    background-color: red;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
 p {
-    font-family: 'Courier New';
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
 }
 
-#fotoperfil {
-    width: 300px;
+/* HEADER
+=======================================*/
+
+.header {
+    width: 100%;
+    height: 140px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.redes {
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    display: grid;
+    opacity: 20%;
+}
+
+.iconos {
+    width: 250px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: end;
+    margin-right: 50px;
+}
+
+.iconos a {
+    color: white;
+    font-size: 28px;
+}
+.iconos a:hover {
+    color: #616161;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90px;
+}
+
+.nav-logo {
+    width: 220px;
+}
+
+.nav-logo a img {
+    width: 100px;
+    margin-left: 200px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+/* MAIN 
+========================*/
+
+.main-principal {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    height: 100%;
+    background-image: url(../Imagenes/fondo\ main.jpg);
+    background-position: center;
+    background-repeat: no repeat;
+    background-size: cover;
+    opacity: 90%;
+}
+
+.contenedor {
+    display: grid;
+    grid-column: 2;
+    justify-items: center;
+    height: 350px;
+    margin-top: 100px;
+}
+
+.contenedor-texto {
+    text-shadow: 2px 2px 30px #ffd000;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700px;
+    letter-spacing: 10px;
+}
+
+.fotocv {
+    width: 250px;
+    height: 280px;
+    border-radius: 0% 50% 50% 50%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.contenedor-link {
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    height: 60px;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #fff;
+    background-color: red;
+    padding-top: 15px;
+    padding-left: 5px;
+}
+
+.contenedor-link:hover {
+    background-color: #ff5050;
 }
